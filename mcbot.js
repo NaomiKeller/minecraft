@@ -27,7 +27,7 @@ embedColor = ("0x" + settings.embedColor);
              console.error(err);
              return;
          }
-         if (typeof res.players.sample === 'undefined') { client.user.setStatus('idle') }
+         if (typeof res.players.sample === 'undefined') { client.user.setStatus('online') }
          if (!(typeof res.players.sample === 'undefined')) { client.user.setStatus('online') }
          serverStatus = res.players.online + ' / ' + res.players.max;
          getDate()
