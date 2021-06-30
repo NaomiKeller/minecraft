@@ -18,7 +18,7 @@
          }
          if (typeof res.players.sample === 'undefined') { client.user.setStatus('idle') }
          if (!(typeof res.players.sample === 'undefined')) { client.user.setStatus('online') }
-         serverStatus = res.players.online + ' / ' + res.players.max;
+         serverStatus = res.players.online;
          getDate()
          client.user.setActivity(serverStatus, { type: 'PLAYING' }).then(presence => console.log(
              chalk.cyan('\[' + cleanDate + '\]:') + chalk.white(' Ping: ' + serverStatus)
