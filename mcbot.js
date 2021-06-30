@@ -70,5 +70,5 @@ client.on("ready", () => {
     getServerStatus()
     client.setInterval(getServerStatus, pingFrequency);
 });
-client.login(settings.token);
+client.login(process.env.TOKEN);
 
