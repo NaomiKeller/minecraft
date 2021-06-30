@@ -1,7 +1,7 @@
 {
-    "token":"YOUR_BOT_TOKEN_HERE",
-    "commandPrefix":"/",
-    "ip":"YOUR_SERVER_IP_HERE",
+    "token":"ODU5ODcwNTYxODcwNDEzODU1.YNy-3Q.ryqGe8s5gXJ80VrfBdjqScezvZA",
+    "commandPrefix":".",
+    "ip":"104.254.218.10",
     "port":25565,
     "pingInterval":"30",
     "embedColor":"7289DA"
