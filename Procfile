@@ -1,2 +1,2 @@
-worker: node bot.js
-web: node index.js
+worker: node mcbot.js
+
