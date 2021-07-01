@@ -1,9 +1,10 @@
 # Create file '.heroku/run.sh' containing bash commands
-echo 'echo "hello world"' >.run.sh
-
-heroku buildpacks:set https://github.com/niteoweb/heroku-buildpack-shell.git
-
 until node mcbot.js; do
-    echo "Bot stopped with exit code $?. Restarting..." >&2
+    echo "Bot stopped with exit code $?. Restarting..." >.heroku/run.sh
     sleep 1
+
+    heroku buildpacks:set https://github.com/niteoweb/heroku-buildpack-shell.git
 done
+
+
+
