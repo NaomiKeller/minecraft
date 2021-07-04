@@ -1,6 +1,6 @@
 {
     "commandPrefix":".",
-    "ip":"104.254.218.10",
+    "ip":"",
     "port":25565,
     "pingInterval":"30",
     "embedColor":"7289DA"
